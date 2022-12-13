@@ -1,0 +1,21 @@
+
+public class EmpregadoMensalista extends Empregado {
+
+	private int salarioMensal;
+	private double taxaEncargosTrabalhistas;
+	
+	EmpregadoMensalista(int salario, double d) {
+		salarioMensal = salario;
+		taxaEncargosTrabalhistas = d;
+	}
+	
+	int pagamentoDoMes() {
+		return (int)(salarioMensal * taxaEncargosTrabalhistas);
+	}
+	
+	public String toString() {
+		return "Sou um empregado mensalista, ganho R$"+ salarioMensal +
+				" e meu patrão paga de encargos trabalhistas R$"
+				+ salarioMensal * (taxaEncargosTrabalhistas-1) + " / ";
+	}
+}

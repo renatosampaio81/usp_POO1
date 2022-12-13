@@ -1,0 +1,13 @@
+
+public class EmpregadoAvulso extends Empregado {
+
+	private int pagamento;
+	
+	EmpregadoAvulso(int valor) {
+		pagamento = valor;
+	}
+	
+	int pagamentoDoMes() {
+		return pagamento;
+	}
+}
